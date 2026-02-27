@@ -1,0 +1,28 @@
+options {
+    directory "/var/cache/bind";
+
+    // Enable recursion for trusted clients
+    recursion yes;
+
+    // Trusted networks allowed to query this DNS server
+    allow-query { trusted; };
+
+    // Listen on BIND9 server IP and localhost
+    listen-on port 53 { 127.0.0.1; 192.168.90.254; };
+    listen-on-v6 { none; };
+
+    // Allow zone transfers to secondary DNS server
+    allow-transfer { 192.168.90.253; };
+
+    // Forward unresolved queries to external DNS servers
+    forwarders {
+        1.1.1.1;
+        9.9.9.9;
+    };
+
+    // Enable DNSSEC validation
+    dnssec-validation auto;
+
+    // Optional: cache size for performance
+    max-cache-size 64m;
+};

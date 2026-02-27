@@ -1,0 +1,11 @@
+zone "jkxprod.lab" {
+    type master;
+    file "/etc/bind/zones/jkxprod.lab";
+    allow-transfer { 192.168.90.254; };
+};
+
+zone "90.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/192.168.90.rev";
+    allow-transfer { 192.168.90.254; };
+};
