@@ -18,4 +18,4 @@ pve2.jkxprod.lab.	IN	A	192.168.172.50
 pve3.jkxprod.lab.	IN	A	192.168.90.50
 host1.jkxprod.lab.	IN	A	192.168.172.251
 hp.jkxprod.lab.		IN	A	192.168.172.250
-adguard.jkxprod.lab IN  A   192.168.80.254
+adguard.jkxprod.lab. IN  A   192.168.80.254
