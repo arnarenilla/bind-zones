@@ -15,10 +15,10 @@ options {
     allow-transfer { 192.168.90.253; };
 
     // Forward unresolved queries to external DNS servers
-    forwarders {
-        1.1.1.1;
-        9.9.9.9;
-    };
+    //forwarders {
+    // 1.1.1.1;
+    // 9.9.9.9;
+   // };
 
     // Enable DNSSEC validation
     dnssec-validation auto;
